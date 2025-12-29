@@ -1,6 +1,6 @@
 [package]
 name = "image_charts"
-version = "6.1.2"
+version = "6.1.3"
 edition = "2021"
 rust-version = "1.83"
 authors = ["Francois-Guillaume Ribreau <github@fgribreau.com>"]
@@ -9,7 +9,7 @@ documentation = "https://docs.rs/image_charts"
 homepage = "https://www.image-charts.com/"
 repository = "https://github.com/image-charts/rust"
 license = "MIT"
-keywords = ["front-end","backend-end","chart","charts","chart url"]
+keywords = ["front-end","backend-end","chart","charts","chart-url"]
 categories = ["api-bindings", "visualization", "web-programming"]
 readme = "README.md"
 
