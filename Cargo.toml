@@ -1,6 +1,6 @@
 [package]
 name = "image_charts"
-version = "6.1.7"
+version = "6.1.8"
 edition = "2021"
 rust-version = "1.83"
 authors = ["Francois-Guillaume Ribreau <github@fgribreau.com>"]
