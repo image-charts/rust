@@ -2,7 +2,7 @@
 name = "image_charts"
 version = "6.1.26"
 edition = "2021"
-rust-version = "1.83"
+rust-version = "1.85"
 authors = ["Francois-Guillaume Ribreau <github@fgribreau.com>"]
 description = "Official Image-Charts.com API client library"
 documentation = "https://docs.rs/image_charts"
