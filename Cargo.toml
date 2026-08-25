@@ -3,6 +3,9 @@ name = "image_charts"
 version = "6.1.182"
 edition = "2021"
 rust-version = "1.86"
+# MSRV-aware dependency resolution: keeps transitive deps (icu_* via reqwest->url->idna)
+# within what rust-version supports instead of pulling their latest MSRV-bumped releases.
+resolver = "3"
 authors = ["Francois-Guillaume Ribreau <github@fgribreau.com>"]
 description = "Official Image-Charts.com API client library"
 documentation = "https://docs.rs/image_charts"
