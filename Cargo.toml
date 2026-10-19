@@ -2,9 +2,12 @@
 name = "image_charts"
 version = "6.1.182"
 edition = "2021"
-rust-version = "1.86"
-# MSRV-aware dependency resolution: keeps transitive deps (icu_* via reqwest->url->idna)
-# within what rust-version supports instead of pulling their latest MSRV-bumped releases.
+rust-version = "1.99"
+# MSRV tracks the pinned CI Rust toolchain (.gitlab-ci.yml .rust-job image); both are
+# bumped together. resolver = "3" keeps MSRV-aware resolution honest: transitive deps
+# (icu_* via reqwest->url->idna) are held to what rust-version supports. Raised from 1.86
+# because yoke-derive (pulled transitively) uses inherent_str_constructors, stabilized in
+# Rust 1.87 (see FGR-57).
 resolver = "3"
 authors = ["Francois-Guillaume Ribreau <github@fgribreau.com>"]
 description = "Official Image-Charts.com API client library"
