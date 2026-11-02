@@ -272,7 +272,7 @@ impl ImageCharts {
     pub fn cht(self, value: impl Into<String>) -> Self {
         self.clone_with("cht", value)
     }
-        /// chart data
+        /// chart data. At most 1,000 series, chm line markers included, and 10,080 points in total.
     ///
     /// [Reference documentation](https://documentation.image-charts.com/reference/data-format/)
     ///
@@ -409,7 +409,7 @@ impl ImageCharts {
     pub fn chdls(self, value: impl Into<String>) -> Self {
         self.clone_with("chdls", value)
     }
-        /// Solid or dotted grid lines
+        /// Solid or dotted grid lines. A dashed grid needs at least 1 pixel per dash or space on average.
     ///
     /// [Reference documentation](https://documentation.image-charts.com/reference/grid-lines/)
     ///
@@ -452,7 +452,7 @@ impl ImageCharts {
     pub fn chco(self, value: impl Into<String>) -> Self {
         self.clone_with("chco", value)
     }
-        /// chart title
+        /// chart title. Each text between pipes holds at most 10,000 characters. The texts of chtt, chdl, chl and chxl hold at most 10,000 characters together that are not printable ASCII: accented letters, other scripts, emoji and line breaks.
     ///
     /// [Reference documentation](https://documentation.image-charts.com/reference/chart-title/)
     ///
@@ -531,7 +531,7 @@ impl ImageCharts {
     pub fn chm(self, value: impl Into<String>) -> Self {
         self.clone_with("chm", value)
     }
-        /// line thickness and solid/dashed style
+        /// line thickness and solid/dashed style. A dashed line needs at least 1 pixel per dash or space on average, and a line width at most 2 times its dash period. Dashed lines run through at most 1,000 points in total.
     ///
     /// [Reference documentation](https://documentation.image-charts.com/line-charts/#line-styles)
     ///
@@ -587,7 +587,7 @@ impl ImageCharts {
     pub fn chdlp(self, value: impl Into<String>) -> Self {
         self.clone_with("chdlp", value)
     }
-        /// Background Fills
+        /// Background Fills. At most 100 gradient stops over all fills.
     ///
     /// [Reference documentation](https://documentation.image-charts.com/reference/background-fill/)
     ///
@@ -633,7 +633,7 @@ impl ImageCharts {
     pub fn chan(self, value: impl Into<String>) -> Self {
         self.clone_with("chan", value)
     }
-        /// doughnut chart inside label
+        /// doughnut chart inside label. The inside label holds at most 3,000 characters.
     ///
     /// [Reference documentation](https://documentation.image-charts.com/pie-charts/#inside-label)
     ///
